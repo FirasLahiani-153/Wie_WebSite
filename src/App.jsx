@@ -13,7 +13,8 @@ function App() {
       <main className=" min-h-screen w-screen overflow-x-hiden">
         <Navbar />
         <Hero />
-   
+      <h1>jkbjkh</h1>
+      <h1>dsdgsdg</h1>
         
       </main>
     </>
