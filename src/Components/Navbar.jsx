@@ -35,10 +35,10 @@ const Navbar = () => {
       end: '+=100',
       scrub: true,
       onEnter: () => {
-        navbarRef.current.classList.add('bg-primary/20', 'backdrop-blur-md', 'shadow-lg');
+        navbarRef.current.classList.add('bg-primary/20', 'backdrop-blur-sm', 'shadow-lg');
       },
       onLeaveBack: () => {
-        navbarRef.current.classList.remove('bg-primary/20', 'backdrop-blur-md', 'shadow-lg');
+        navbarRef.current.classList.remove('bg-primary/20', 'backdrop-blur-sm', 'shadow-lg');
       },
     });
 
@@ -51,10 +51,10 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="fixed top-0 left-0 w-full z-50 p-4 min-w-72 transition-colors duration-300"
+      className="fixed top-0 left-0 w-full z-50 p-4 min-w-72  transition-colors duration-300"
     >
       <div className="container mx-auto flex justify-between items-center">
-        <img src={Wielogo} className="h-20 w-20" alt="Logo" />
+        <img src={Wielogo} className="h-[65px] w-[65px]" alt="Logo" />
         <ul className="flex space-x-4 items-center gap-6">
           {["Home", "About", "Activities", "Events"].map((item, index) => (
             <li

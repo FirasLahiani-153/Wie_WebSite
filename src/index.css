@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import '@fontsource/righteous';
+@import '@fontsource/ropa-sans';
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .textShadow {
+    text-shadow: 3px 3px 6px #0000006c;
+    
+  }
+}

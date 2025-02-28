@@ -15,7 +15,9 @@ function App() {
         <Hero />
       <h1>jkbjkh</h1>
       <h1>dsdgsdg</h1>
-        
+      <Hero />
+      <Hero />
+      <Hero />
       </main>
     </>
   );
