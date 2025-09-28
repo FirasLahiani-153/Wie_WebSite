@@ -1,6 +1,15 @@
 # IEEE WIE ISIMS Website  
 Visit The website : https://wie-isims.ieee.tn
+# NOTE: 
+Add a .env file with your FACEBOOK_PAGE_ACCESS_TOKEN / FACEBOOK_PAGE_ID / FACEBOOK_PROFILE_LINK
+# and  SupabaseClient.js :  
 
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = "YOUR_SUPABASEURL";       // from API settings
+const supabaseKey = "YOUR_ANON_API_KEY";  // from API settings
+
+export const supabase = createClient(supabaseUrl, supabaseKey);
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/FirasLahiani-153/Wie_WebSite)  
 ![GitHub contributors](https://img.shields.io/github/contributors/FirasLahiani-153/Wie_WebSite)  
