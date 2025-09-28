@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import Hero from "./Components/Hero.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  <StrictMode >
     <App />
   </StrictMode>
 );

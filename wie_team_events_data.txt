@@ -1,0 +1,159 @@
+IEEE WIE ISIMS STUDENT AFFINITY GROUP - TEAM AND EVENTS DATA
+================================================================
+
+ORGANIZATION OVERVIEW
+====================
+- Name: IEEE Women in Engineering (WIE) ISIMS Student Affinity Group
+- Location: Higher Institute of Computer Science and Multimedia (ISIMS), Sfax, Tunisia
+- Email: sba-isims-wie@ieee.org / wieisims@gmail.com
+- Website: IEEE WIE ISIMS Student Affinity Group
+
+MISSION AND VISION
+==================
+Mission: To inspire, engage, and advance women in technical disciplines globally. We strive to create a supportive environment where women can thrive in STEM fields, fostering innovation and leadership.
+
+Vision: To be the leading organization for women in engineering and technology, creating a world where women are equally represented and valued in STEM fields, driving innovation and positive change.
+
+OBJECTIVES
+==========
+- Promote gender diversity in STEM fields
+- Provide networking and mentorship opportunities
+- Organize workshops and technical training sessions
+- Support career development and leadership skills
+- Foster innovation and research collaboration
+- Create awareness about women's contributions in STEM
+
+TEAM MEMBERS BY YEAR
+====================
+
+2025 TEAM
+---------
+Chair: Baya Chaffai
+Vice Chair: Yosra Teieb
+Secretary: Malek Charfeddine
+Treasurer: Nour Hadj Taieb
+Media Manager: Elee Abidi
+Web Master: Firas Lahiani
+
+2024 TEAM
+---------
+Chair: Emna Awadni
+Vice Chair: Eya Bouaziz
+Secretary: Wafa Zribi
+Treasurer: Nour Allouch
+Web Master: Amal Walha
+
+2023 TEAM
+---------
+Chair: Eya Maazoun
+Vice Chair: Ons Turki
+Secretary: Nour Houda Zghal
+Treasurer: Ascil Chtioui
+
+COUNCIL MEMBERS BY YEAR
+=======================
+
+2025 COUNCIL
+------------
+Chair SMC Tunisia section: Mrs Ilhem Kallel
+Technical Advisor: Prof. Ahmed Ben Ali
+Industry Liaison: Dr. Fatma Khelil
+
+2024 COUNCIL
+------------
+Faculty Advisor: Dr. Sarah Johnson
+Technical Advisor: Prof. Ahmed Ben Ali
+Industry Liaison: Dr. Fatma Khelil
+
+2023 COUNCIL
+------------
+Faculty Advisor: Dr. Sarah Johnson
+
+EVENTS AND ACTIVITIES
+=====================
+
+2025 EVENTS
+-----------
+1. WIE DAY: Networking event and round table
+   - Date: July 6, 2025
+   - Time: 3:00 PM BST to 7:02 PM BST
+   - Location: Funtime Sfax
+   - Description: Members from four Student Affinity Groups came together to share experiences with cyberbullying and cybercrime during an open and honest roundtable discussion. The atmosphere shifted to a more relaxed and engaging setting, allowing participants to connect, network, and strengthen bonds between groups, fostering both friendship and collaboration.
+
+2. Tunisian National Women's Day Celebration: Coffee talk and video
+   - Date: August 13, 2025
+   - Time: 8:00 PM BST to 9:30 PM BST
+   - Location: Google Meet
+   - Description: Celebrated International Women's Day in collaboration with Mrs. Ahlem Ammar, a Biotechnology PhD student and founder & CEO of the biotech startup BIOMIDEX. She shared her inspiring journey from her first steps in biotechnology to launching her startup, emphasizing the importance of believing in yourself, aiming high without limits, and daring to dream big.
+
+3. WIE PROMPT: Women Building a Safer Cyberspace - WIE DAY Celebration
+   - Date: July 25, 2025
+   - Time: 8:00 PM – 9:40 PM
+   - Location: Google Meet
+   - Description: Theme: "Pioneering Safe Cyberspace: Women Bridging Technology and Light for Security". As we navigate the complexities of the digital age, women are stepping up as innovators, protectors, and leaders—bringing clarity, resilience, and brilliance to the forefront of cybersecurity.
+
+4. The Entrepreneurship & Leadership Bootcamp
+   - Date: April 10, 2025
+   - Time: 2:00 PM - 5:00 PM
+   - Location: Youth club
+   - Description: An immersive experience designed to ignite potential, sharpen skills, and connect participants with industry leaders in a dynamic, interactive setting. Spots were limited for this opportunity to shape the future.
+
+5. TechResolve Challenge 2.0
+   - Date: March 22-23, 2025
+   - Time: (1st day) 11:30 AM - 1:00 PM (2nd day)
+   - Location: ISIMS
+   - Description: The second edition of the 'TechResolve Challenge' (TRC 2.0), following the success of its first edition in 2024. A technical hackathon organized by IEEE ISIMS SB, in collaboration with IEEE CS, IAS, SMC ISIMS SBC's, and IEEE WIE ISIMS SAG. Aimed to gather 250 participants from all IEEE student branches of the IEEE Tunisia Section.
+
+6. Panel Discussion: Her in STEM
+   - Date: February 12, 2025
+   - Time: 3:00 PM
+   - Location: Higher Institute of Computer Science and Multimedia, Amphi
+   - Description: A powerful panel discussion on women and girls in science at ISIMS amphi. Distinguished panelists shared insights and inspired the next generation of STEM leaders.
+
+ACTIVITIES AND INITIATIVES
+==========================
+1. Educational Visits
+   - WIE ISIMS organizes multiple educational visits throughout the year
+   - Aims to support youth and help them grow within STEM fields
+
+2. Workshops
+   - Entrepreneurship workshops
+   - Leadership workshops
+   - Various technical and professional development workshops
+   - Designed to leave an impact by engaging more people with fun activities in different fields
+
+3. Team Building
+   - WIE ISIMS values relationships with its members
+   - Regular gatherings and time spent together
+   - Multiple meetings held every week to track workflow
+   - Fosters strong team bonds and collaboration
+
+SOCIAL MEDIA PRESENCE
+=====================
+- Instagram: @ieee_wie_isims
+- LinkedIn: IEEE WIE ISIMS Student Affinity Group
+- Facebook: IEEE WIE ISIMS Student Affinity Group
+
+CONTACT INFORMATION
+===================
+- Email: sba-isims-wie@ieee.org / wieisims@gmail.com
+- Location: ISIMS, Sfax, Tunisia
+- Website: IEEE WIE ISIMS Student Affinity Group
+
+TECHNICAL DETAILS
+=================
+- Website created by: Firas Lahiani
+- Organization: IEEE Women in Engineering (WIE) ISIMS Student Affinity Group
+- Institution: Higher Institute of Computer Science and Multimedia (ISIMS)
+- Location: Sfax, Tunisia
+
+NOTABLE COLLABORATIONS
+======================
+- IEEE Computer Society (CS)
+- IEEE Industry Applications Society (IAS)
+- IEEE Systems, Man, and Cybernetics Society (SMC) ISIMS SBC
+- IEEE Tunisia Section
+- Various biotech startups and industry professionals
+- Mrs. Ahlem Ammar (BIOMIDEX founder & CEO)
+
+This data represents the comprehensive information about IEEE WIE ISIMS Student Affinity Group's team members, events, activities, and organizational structure from 2023 to 2025, suitable for chatbot training and reference purposes.

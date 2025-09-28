@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif' ],
+        roboto: ['Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         righteous: ['Righteous', 'cursive'],
         ropa: ['Ropa Sans', 'sans-serif'],
-        
+
       },
       textShadow: {
         sm: '1px 1px 2px rgba(0, 0, 0, 0.5)',

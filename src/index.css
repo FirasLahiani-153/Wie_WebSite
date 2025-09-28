@@ -9,9 +9,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 @layer components {
   .textShadow {
     text-shadow: 3px 3px 6px #0000006c;
-    
+
   }
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  touch-action: none;
+  overscroll-behavior: none;
 }
