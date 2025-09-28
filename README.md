@@ -6,7 +6,8 @@ Add a .env file with your FACEBOOK_PAGE_ACCESS_TOKEN / FACEBOOK_PAGE_ID / FACEBO
 
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = "YOUR_SUPABASEURL";       // from API settings
+const supabaseUrl = "YOUR_SUPABASEURL"; // from API settings
+
 const supabaseKey = "YOUR_ANON_API_KEY";  // from API settings
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
