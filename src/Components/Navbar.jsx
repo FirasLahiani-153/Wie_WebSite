@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Wielogo from "/assets/wie_white.png";
 import Button from "./Button";
@@ -16,6 +16,7 @@ const Navbar = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const scrollYRef = useRef(0);
 
   const handleHover = (index) => {
     gsap.to(underlineRefs.current[index], {
@@ -101,15 +102,44 @@ const Navbar = () => {
     });
   }, []);
 
+  // Lock body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Save current scroll position
+      scrollYRef.current = window.scrollY;
+      // Lock scroll
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollYRef.current}px`;
+      document.body.style.width = '100%';
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Restore scroll
+      const y = scrollYRef.current;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      window.scrollTo(0, y);
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Growth", href: "#growth" },
     { name: "Team", href: "#team" },
     { name: "Activities", href: "#activities" },
     { name: "Events", href: "#events" },
-    { name: "Growth", href: "#growth" },
     { name: "Social Media", href: "#social" },
-    { name: "WIE ACT 4.O", href: "https://wieact4.vercel.app" },
+
   ];
 
   const toggleMenu = () => {
@@ -131,8 +161,8 @@ const Navbar = () => {
         ref={navbarRef}
         className="fixed top-10 left-0 w-full z-[1001] p-2 min-w-72 transition-colors duration-300"
       >
-        <div className="container mx-auto flex justify-between items-center">
-          <a href="#home" onClick={handleHomeClick}>
+        <div className="container mx-auto flex justify-between items-center relative">
+          <a href="#home" onClick={handleHomeClick} className="z-[1002]">
             <img
               src={Wielogo}
               className="h-[50px] w-[50px] sm:h-[65px] sm:w-[65px]"
@@ -140,112 +170,120 @@ const Navbar = () => {
             />
           </a>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden text-white p-2 z-[1002]"
-            aria-label="Toggle menu"
-          >
-            <div className="w-6 h-5 flex flex-col justify-between">
-              <span
-                className={`w-full h-0.5 bg-white transform transition-all duration-300 ${
-                  isMenuOpen ? "rotate-45 translate-y-2" : ""
-                }`}
-              ></span>
-              <span
-                className={`w-full h-0.5 bg-white transition-all duration-300 ${
-                  isMenuOpen ? "opacity-0" : ""
-                }`}
-              ></span>
-              <span
-                className={`w-full h-0.5 bg-white transform transition-all duration-300 ${
-                  isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                }`}
-              ></span>
-            </div>
-          </button>
-
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-4 items-center gap-6">
-            {navItems.map((item, index) => (
-              <li
-                key={index}
-                onMouseEnter={() => handleHover(index)}
-                onMouseLeave={() => handleHoverOut(index)}
-                className="relative"
-              >
-                <a
-                  href={item.href}
-                  onClick={(e) => handleSmoothScroll(e, item.href)}
-                  className="text-white text-xl font-medium font-roboto cursor-pointer"
+          <div className="flex items-center gap-4 z-[1002]">
+            {/* Desktop Menu */}
+            <ul className="hidden md:flex space-x-4 items-center gap-6">
+              {navItems.map((item, index) => (
+                <li
+                  key={index}
+                  onMouseEnter={() => handleHover(index)}
+                  onMouseLeave={() => handleHoverOut(index)}
+                  className="relative"
                 >
-                  {item.name}
-                </a>
-                <div
-                  ref={(el) => (underlineRefs.current[index] = el)}
-                  className="border-t-[3px] border-white rounded-xl absolute bottom-[-4px] left-0 w-0"
-                />
-              </li>
-            ))}
-          </ul>
-          <button
-            onClick={() => setIsContactOpen(true)}
-            className="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full transition-colors duration-300"
-          >
-            Contact
-          </button>
-
-          {/* Mobile Menu Overlay */}
-          {isMenuOpen && (
-            <div
-              className="fixed inset-0 bg-black/30 backdrop-blur-sm md:hidden z-[1000] transition-opacity duration-300"
-              onClick={toggleMenu}
-            />
-          )}
-
-          {/* Mobile Menu */}
-          <div
-            className={`fixed top-0 right-0 h-full w-[280px] bg-primary/80 backdrop-blur-xl transition-all duration-500 ease-in-out transform ${
-              isMenuOpen ? "translate-x-0" : "translate-x-full"
-            } md:hidden z-[1001] shadow-2xl border-l border-white/10`}
-          >
-            <div className="flex flex-col h-full">
-              <div className="p-6 border-b border-white/10">
-                <a href="#home" onClick={handleHomeClick}>
-                  <img src={Wielogo} className="h-[50px] w-[50px]" alt="Logo" />
-                </a>
-              </div>
-              <ul className="flex flex-col py-6">
-                {navItems.map((item, index) => (
-                  <li key={index} className="w-full">
-                    <a
-                      href={item.href}
-                      onClick={(e) => {
-                        handleSmoothScroll(e, item.href);
-                        setIsMenuOpen(false);
-                      }}
-                      className="block text-white text-lg font-medium font-roboto py-4 px-6 hover:bg-white/10 transition-all duration-300 border-l-4 border-transparent hover:border-white cursor-pointer"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-                <li className="px-6 py-4">
-                  <button
-                    onClick={() => {
-                      setIsContactOpen(true);
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full transition-colors duration-300"
+                  <a
+                    href={item.href}
+                    onClick={(e) => handleSmoothScroll(e, item.href)}
+                    className="text-white text-xl font-medium font-roboto cursor-pointer"
                   >
-                    Contact
-                  </button>
+                    {item.name}
+                  </a>
+                  <div
+                    ref={(el) => (underlineRefs.current[index] = el)}
+                    className="border-t-[3px] border-white rounded-xl absolute bottom-[-4px] left-0 w-0"
+                  />
                 </li>
-              </ul>
-            </div>
+              ))}
+            </ul>
+
+            {/* Desktop Contact Button - Hidden on mobile */}
+            <button
+              onClick={() => setIsContactOpen(true)}
+              className="hidden md:block bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full transition-colors duration-300"
+            >
+              Contact
+            </button>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleMenu}
+              className="md:hidden text-white p-2 relative z-[1003]"
+              aria-label="Toggle menu"
+            >
+              <div className="w-6 h-5 flex flex-col justify-between">
+                <span
+                  className={`w-full h-0.5 bg-white transform transition-all duration-300 ${isMenuOpen ? "rotate-45 translate-y-2" : ""
+                    }`}
+                ></span>
+                <span
+                  className={`w-full h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""
+                    }`}
+                ></span>
+                <span
+                  className={`w-full h-0.5 bg-white transform transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                    }`}
+                ></span>
+              </div>
+            </button>
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/30 backdrop-blur-sm md:hidden z-[9998] transition-opacity duration-300"
+          onClick={toggleMenu}
+        />
+      )}
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-[280px] bg-primary/80 backdrop-blur-xl transition-all duration-500 ease-in-out transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          } md:hidden z-[9999] shadow-2xl border-l border-white/10`}
+      >
+        <div className="flex flex-col h-full">
+          <div className="p-6 border-b border-white/10 flex justify-between items-center">
+            <a href="#home" onClick={handleHomeClick}>
+              <img src={Wielogo} className="h-[50px] w-[50px]" alt="Logo" />
+            </a>
+            <button
+              onClick={toggleMenu}
+              className="text-white text-2xl hover:text-white/80 transition-colors"
+              aria-label="Close menu"
+            >
+              ✕
+            </button>
+          </div>
+          <ul className="flex flex-col py-6 overflow-y-auto flex-1">
+            {navItems.map((item, index) => (
+              <li key={index} className="w-full">
+                <a
+                  href={item.href}
+                  onClick={(e) => {
+                    handleSmoothScroll(e, item.href);
+                    setIsMenuOpen(false);
+                  }}
+                  className="block text-white text-lg font-medium font-roboto py-4 px-6 hover:bg-white/10 transition-all duration-300 border-l-4 border-transparent hover:border-white cursor-pointer"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          {/* Contact Button in Mobile Menu */}
+          <div className="p-6 border-t border-white/10 mt-auto">
+            <button
+              onClick={() => {
+                setIsContactOpen(true);
+                setIsMenuOpen(false);
+              }}
+              className="w-full bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full transition-colors duration-300 font-medium"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
 
       {/* Contact Form Modal */}
       <ContactForm

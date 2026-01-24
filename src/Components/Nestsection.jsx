@@ -31,8 +31,8 @@ const Nestsection = () => {
     2023: [
       { name: "Eya Maazoun", post: "Chair", path: "/assets/baya.png", social: { facebook: "https://facebook.com/baya", instagram: "https://instagram.com/baya", linkedin: "https://linkedin.com/in/baya" } },
       { name: "Ons Turki", post: "Vice Chair", path: "/assets/yosra.png", social: { facebook: "https://facebook.com/yosra", instagram: "https://instagram.com/yosra", linkedin: "https://linkedin.com/in/yosra" } },
-      { name: "Nour Houda Zghal", post: "Secretary", path: "/assets/malek.png", social: { facebook: "https://facebook.com/malek", instagram: "https://instagram.com/malek", linkedin: "https://linkedin.com/in/malek" } },
-      { name: "Ascil Chtioui", post: "Treasurer", path: "/assets/nour.png", social: { facebook: "https://facebook.com/nour", instagram: "https://instagram.com/nour", linkedin: "https://linkedin.com/in/nour" } }
+      { name: "Ascil Chtioui", post: "Secretary", path: "/assets/nour.png", social: { facebook: "https://facebook.com/nour", instagram: "https://instagram.com/nour", linkedin: "https://linkedin.com/in/nour" } },
+      { name: "Nour Houda Zghal", post: "Treasurer", path: "/assets/malek.png", social: { facebook: "https://facebook.com/malek", instagram: "https://instagram.com/malek", linkedin: "https://linkedin.com/in/malek" } }
     ],
     2024: [
       { name: "Emna Awadni", post: "Chair", path: "/assets/emna.png", social: { facebook: "https://www.facebook.com/emna.awadni", instagram: "https://www.instagram.com/emnaawadni", linkedin: "https://www.linkedin.com/in/emna-awadni-a50b692b1" } },
