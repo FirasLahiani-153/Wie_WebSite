@@ -49,12 +49,20 @@ const Nestsection = () => {
       { name: "Nour Hadj Taieb", post: "Treasurer", path: "/assets/nour.png", social: { facebook: "https://www.facebook.com/nour.hadjtaieb.77", instagram: "https://www.instagram.com/nour_hadj_tayeb", linkedin: "https://www.linkedin.com/in/nourhadjtaieb2004" } },
       { name: "Elee Abidi", post: "Media Manager", path: "/assets/elee.png", social: { facebook: "https://www.facebook.com/elee.abidi.7", instagram: "https://www.instagram.com/elee__abidi", linkedin: "https://www.linkedin.com/in/elee-abidi-68ab8432a" } },
       { name: "Firas Lahiani", post: "Web Master", path: "/assets/firas.png", social: { facebook: "https://www.facebook.com/fitas.lahiani.9", instagram: "https://www.instagram.com/firaslahiani_00", linkedin: "https://www.linkedin.com/in/firaslahiani" } },
-      { name: "Dr Ilhem Kallel", post: "Advisor", path: "/assets/ahlem.png", social: { facebook: "https://www.facebook.com/ikallel", instagram: "hhttps://www.instagram.com/ilhem_kallel", linkedin: "https://www.linkedin.com/in/ilhem-kallel-78699b36" } }
+      { name: "Ilhem Kallel", post: "Advisor", path: "/assets/ahlem.png", social: { facebook: "https://www.facebook.com/ikallel", instagram: "hhttps://www.instagram.com/ilhem_kallel", linkedin: "https://www.linkedin.com/in/ilhem-kallel-78699b36" } }
+    ],
+    2026: [
+      { name: "Roua Zouawi", post: "Chair", path: "/assets/roua.png", social: { facebook: "https://www.facebook.com/yosra.teieb.2025", instagram: "https://www.instagram.com/yosra._.teieb", linkedin: "https://www.linkedin.com/in/yosra-teieb" } },
+      { name: "Amina Yaich", post: "Vice Chair", path: "/assets/amina.png", social: { facebook: "https://www.facebook.com/baya.chaffai.7", instagram: "https://www.instagram.com/bayachaffai" } },
+      { name: "Nada Mallek", post: "Secretary", path: "/assets/nada.png", social: { facebook: "https://www.facebook.com/malek.ch.739", instagram: "https://www.instagram.com/malek._.charfeddine", linkedin: "https://www.linkedin.com/in/malek-charfeddine-a026a9340" } },
+      { name: "Arij Dabbebi", post: "Treasurer", path: "/assets/arij.png", social: { facebook: "https://www.facebook.com/nour.hadjtaieb.77", instagram: "https://www.instagram.com/nour_hadj_tayeb", linkedin: "https://www.linkedin.com/in/nourhadjtaieb2004" } },
+      { name: "Ghada Ben Hassine", post: "Web Master", path: "/assets/ghada.png", social: { facebook: "https://www.facebook.com/fitas.lahiani.9", instagram: "https://www.instagram.com/firaslahiani_00", linkedin: "https://www.linkedin.com/in/firaslahiani" } },
+      { name: "Ilhem Kallel", post: "Advisor", path: "/assets/ahlem.png", social: { facebook: "https://www.facebook.com/ikallel", instagram: "hhttps://www.instagram.com/ilhem_kallel", linkedin: "https://www.linkedin.com/in/ilhem-kallel-78699b36" } }
     ]
   };
 
   
-  const [selectedYear, setSelectedYear] = React.useState(2025);
+  const [selectedYear, setSelectedYear] = React.useState(2026);
 
   return (
     <section id="team" className="w-screen min-h-screen bg-[#742F8A] relative py-20 overflow-hidden">
@@ -98,7 +106,7 @@ const Nestsection = () => {
           transition={{ duration: 0.5 }}
           className="flex items-center justify-center gap-3 mb-12"
         >
-          {[2025, 2024, 2023].map((year) => {
+          {[2026,2025, 2024, 2023].map((year) => {
             const isActive = year === selectedYear;
             return (
               <button
