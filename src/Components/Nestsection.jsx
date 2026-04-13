@@ -52,11 +52,11 @@ const Nestsection = () => {
       { name: "Ilhem Kallel", post: "Advisor", path: "/assets/ahlem.png", social: { facebook: "https://www.facebook.com/ikallel", instagram: "hhttps://www.instagram.com/ilhem_kallel", linkedin: "https://www.linkedin.com/in/ilhem-kallel-78699b36" } }
     ],
     2026: [
-      { name: "Roua Zouawi", post: "Chair", path: "/assets/roua.png", social: { facebook: "https://www.facebook.com/yosra.teieb.2025", instagram: "https://www.instagram.com/yosra._.teieb", linkedin: "https://www.linkedin.com/in/yosra-teieb" } },
-      { name: "Amina Yaich", post: "Vice Chair", path: "/assets/amina.png", social: { facebook: "https://www.facebook.com/baya.chaffai.7", instagram: "https://www.instagram.com/bayachaffai" } },
-      { name: "Nada Mallek", post: "Secretary", path: "/assets/nada.png", social: { facebook: "https://www.facebook.com/malek.ch.739", instagram: "https://www.instagram.com/malek._.charfeddine", linkedin: "https://www.linkedin.com/in/malek-charfeddine-a026a9340" } },
-      { name: "Arij Dabbebi", post: "Treasurer", path: "/assets/arij.png", social: { facebook: "https://www.facebook.com/nour.hadjtaieb.77", instagram: "https://www.instagram.com/nour_hadj_tayeb", linkedin: "https://www.linkedin.com/in/nourhadjtaieb2004" } },
-      { name: "Ghada Ben Hassine", post: "Web Master", path: "/assets/ghada.png", social: { facebook: "https://www.facebook.com/fitas.lahiani.9", instagram: "https://www.instagram.com/firaslahiani_00", linkedin: "https://www.linkedin.com/in/firaslahiani" } },
+      { name: "Roua Zouawi", post: "Chair", path: "/assets/roua.png", social: { facebook: "https://www.facebook.com/spamm.pikaa", instagram: "https://www.instagram.com/roua__zouawi/", } },
+      { name: "Amina Yaich", post: "Vice Chair", path: "/assets/amina.png", social: { facebook: "https://www.facebook.com/amina.yaich.391", instagram: "https://www.instagram.com/amina.yaich/",linkedin:"https://www.linkedin.com/in/amina-yaich/" } },
+      { name: "Nada Mallek", post: "Secretary", path: "/assets/nada.png", social: { facebook: "https://www.facebook.com/nada.mallek.75", instagram: "https://www.instagram.com/nada.mallek11/" } },
+      { name: "Arij Dabbebi", post: "Treasurer", path: "/assets/arij.png", social: { facebook: "https://www.facebook.com/profile.php?id=61580444735253", instagram: "https://www.instagram.com/arij.dabbebi/" } },
+      { name: "Ghada Ben Hassine", post: "Web Master", path: "/assets/ghada.png", social: { facebook: "https://www.facebook.com/ghada.ben.hassine155/", instagram: "https://www.instagram.com/ghada_ben_hassine15/", linkedin: "https://www.linkedin.com/in/ghadabenhassine/" } },
       { name: "Ilhem Kallel", post: "Advisor", path: "/assets/ahlem.png", social: { facebook: "https://www.facebook.com/ikallel", instagram: "hhttps://www.instagram.com/ilhem_kallel", linkedin: "https://www.linkedin.com/in/ilhem-kallel-78699b36" } }
     ]
   };
